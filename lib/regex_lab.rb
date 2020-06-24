@@ -32,6 +32,7 @@ end
 
 def valid_phone_number?(phone)
   if phone.match(/\d{3}.?\d{3}.?\d{4}/)
+    # string of 3 digits with space for dash or parentheses twice, followed by a string of 4 digits
     true
   end
 end
