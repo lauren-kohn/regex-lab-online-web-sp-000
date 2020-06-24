@@ -21,7 +21,7 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   if text.match(/^[A-Z].*[[:punct:]]/)
     true
-  else text.match(/^[A-Z].*\w\z/)
+  else !text.match(/^[A-Z].*\w\z/)
     false
   #else text.match(/^[a-z].*[[:punct:]]/)
     #false
