@@ -20,9 +20,10 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
   if text.match(/^[A-Z].*\w\z/)
-    # string must begin with capital letter, followed by unknown number of character
+    # string must begin with capital letter, followed by unknown number of characters with any word character at the end
     false 
   elsif text.match(/^[A-Z].*[[:punct:]]/)
+    # string must begin with a capital letter, followed by unknown number of characters with punctuation at the end
     true
   else text.match(/^[A-Z].*\w\z/)
     false
